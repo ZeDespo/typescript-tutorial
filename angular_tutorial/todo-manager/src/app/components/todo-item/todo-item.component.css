@@ -1,0 +1,26 @@
+/*
+Style sheet for an individual to-do entry in a to-do list.
+*/
+
+/* Style sheet for buttons belonging to the "del" class */
+.del {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 9px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style sheet for a to-do item entry */
+.todo {
+  background: antiquewhite;
+  padding: 10px;
+  border-bottom: 1px white dotted;
+}
+
+/* If the task is marked as complete, then put a strike through the task.*/
+.is-complete {
+  text-decoration: line-through;
+}

@@ -1,0 +1,18 @@
+<!--HTML for each individual listing in a To-Do list.-->
+<!--Setting a class so the entire thing can have CSS on it.-->
+<div [ngClass]="setClasses()">
+  <p>
+    <!--Create the checkbox to the left of an item -->
+    <label>
+      <input (change)="onToggle(todo)" type="checkbox">
+    </label>
+    <!-- Write the below next to the checkbox.-->
+    Title: {{ todo.title }}
+    <label>
+      <textarea>id {{ todo.id }}</textarea>
+    </label>
+    <!-- Include a button to the right of the entry to delete it. -->
+    <button (click)="onDelete(todo)" class="del"></button>
+  </p>
+</div>
+
